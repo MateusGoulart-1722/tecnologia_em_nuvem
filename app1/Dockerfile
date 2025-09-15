@@ -20,7 +20,7 @@ RUN sed -i "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.config && \
 # Permite acesso ao diretorio
 RUN echo '<Directory /var/www/html>' >> /etc/apache2.conf && \
     echo '  options indexes FollowSymLinks' >> /etc/apache2.conf && \
-    echo '  AllowOverrride All' >> /etc/apache2/apache2.conf && \
+    echo '  AllowOverride All' >> /etc/apache2/apache2.conf && \
     echo '  Require all granted' >> /etc/apache2/apache2.conf && \
     echo '</Directory>' >> /etc/apache2/apache2.conf
 
