@@ -10,11 +10,11 @@ function stringParaBinario ($string) {
 		//converte o caractere para o valor binário de 8 bits
 		$binario .= str_pad(decbin(ord($char)), 8, '0', STR_PAD_LEFT) . ' ';
 	}
-	return $binário;
+	return $binario;
 }
 
 // Exemplo de uso
-$frase = "Mateus Boprges Lino Goulart!";
+$frase = "Mateus Borges Lino Goulart!";
 $fraseBinario = stringParaBinario($frase);
 
 // Exibindo a frase original e sua versão binária
